@@ -1,3 +1,3 @@
 fn main() {
-    println!("this is main.rs");
+  println!("this is main.rs");
 }

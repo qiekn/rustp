@@ -1,20 +1,20 @@
 fn main() {
-    let long_lived_binding = 1;
+  let long_lived_binding = 1;
 
-    {
-        let short_lived_binding = 2;
+  {
+    let short_lived_binding = 2;
 
-        println!("inner short: {}", short_lived_binding);
+    println!("inner short: {}", short_lived_binding);
 
-        // variable shadowing
-        let long_lived_binding = 5_f32;
+    // variable shadowing
+    let long_lived_binding = 5_f32;
 
-        println!("inner long: {}", long_lived_binding);
-    }
+    println!("inner long: {}", long_lived_binding);
+  }
 
-    println!("outer long: {}", long_lived_binding);
+  println!("outer long: {}", long_lived_binding);
 
-    let long_lived_binding = 'a';
+  let long_lived_binding = 'a';
 
-    println!("outer long: {}", long_lived_binding);
+  println!("outer long: {}", long_lived_binding);
 }
